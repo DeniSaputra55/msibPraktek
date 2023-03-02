@@ -1,0 +1,6 @@
+Rangkuman bejar msib
+23/02/2023
+belajar pengguna frame
+pembuatan halaman navbar,header,sidebar.
+penerapan css internal dihtml
+membuat contoh selector tag css pada html

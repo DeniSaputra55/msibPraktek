@@ -1,0 +1,53 @@
+/* universal css */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    /* margin = untuk memberi jarak pembatasnya */
+    margin: 0;
+}
+.header{
+    background-color: aqua;
+    padding: 20px;
+    text-align: center;
+}
+.topnav{
+    overflow: hidden;
+    background-color: antiquewhite;
+}
+.topnav a{
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+.topnav a:hover{
+    background-color: aliceblue;
+    color: blue;
+}
+.kolom1{
+    float: left;
+    padding: 10px;
+    
+}
+.kolom1.side{
+    width: 25%;
+}
+.kolom1.middle{
+    width: 50%;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;   /*memmbersihkan float left sebelumnya */
+}
+.footer{
+    width: 100%;
+    background-color: aquamarine;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+}

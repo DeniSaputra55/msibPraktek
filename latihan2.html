@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Membuat Table</title>
+</head>
+<body>
+    <thead>
+        <tr>
+            <td>
+                <fieldset>
+                    <legend>Link</legend>
+                    <ul>
+                        <!-- menambahkan hyperlink -->
+                        <li><a href="latihan1.html" >Home</a></li>
+                        <li><a href="latihan2.html" target="_blank">Biodata</a></li>
+                        <li><a href="latihan3.html" target="_blank">Form</a></li>
+                    </ul>
+                </fieldset>
+            </td>
+        </tr>
+        </thead>
+    <!-- Membuat table sederhana -->
+    <table align="left" border="3" cellpadding="10" cellspacing="0" width="100%">
+        <thead>
+        <tr bgcolor="greenyellow">
+            <th>No</th>
+            <th>Nama</th>
+            <th>Alamat</th>
+            
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <!-- menggabungkan kolom pada table -->
+            <td rowspan="2">1</td>
+            <td>Tiwi</td>
+            <td rowspan="3" align="center">Jakarta</td>
+        </tr>
+        <tr>
+            <td>Tika</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Jajang</td>
+        </tr>
+        </tbody>
+        <tfoot>
+            <tr >
+                <!-- menggabungkan baris pada table -->
+                <th colspan="3">Ini data alamat</th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
