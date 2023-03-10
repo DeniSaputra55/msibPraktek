@@ -1,0 +1,37 @@
+<script>
+    //ada pelanggan membeli barang elektronik 
+    //barang barangnya misalnya ada TV => 3jt, Motor => 12jt, Kulkas => 4jt
+    //tentukan pembelian barangnya apa dan berapa yang beli
+    let pelanggan = "Deni Saputra ";
+    let produk = "TV";
+
+    let hargasatuan = 0;
+    switch(produk){
+        case 'TV': hargasatuan = 3000000; break;
+        case 'Motor': hargasatuan = 12000000; break;
+        case 'Kulkas': hargasatuan = 4000000; break;
+        default: hargasatuan = 0;
+    }
+    let jumlahBeli = 3;
+    let bruto = hargasatuan * jumlahBeli;
+    let ppn = bruto * 0.11;
+
+    //membuat diskon untuk 3 produk diatas
+    let diskon = 0;
+    if (produk == 'TV') diskon = 0.3 * bruto;
+    else if (produk == 'Motor') diskon = 0.2 * bruto;
+    else diskon = 0.05 * bruto;
+
+    let hasil_diskon = bruto - diskon;
+
+    document.write("Data Pembelian " +
+    "Pelanggan : " + pelanggan +
+    "<br> Produk : " + produk +
+    "<br> Jumlah Beli Produk : " + jumlahBeli +
+    "<br> Harga Satuan : " + hargasatuan +
+    "<br> Total Harga : " + bruto +
+    "<br> Diskon : " + diskon +
+    "<br> PPN : " + ppn +
+    "<br> Total Dipotong Diskon : " + hasil_diskon
+    );
+</script>
